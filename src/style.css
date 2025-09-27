@@ -1,0 +1,104 @@
+:root {
+  --white: #e1e1da;
+  --off-white: #e3e4db;
+  --silver: #cdcdcd;
+  --brown: #5c5552;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background: var(--off-white);
+  height: 99%;
+}
+
+/* Center the card in the viewport */
+.main-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card with elevated look */
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 32px 0 rgba(60, 60, 60, 0.18), 0 1.5px 6px 0 rgba(60, 60, 60, 0.10);
+  overflow: hidden;
+  width: 50vw;
+  min-width: 50vw;
+  max-width: 90vw;
+}
+
+.profile-photo {
+  flex: 0 0 32%;
+  background: var(--silver);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  max-width: 240px;
+  padding: 0 1rem;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  display: block;
+  margin: 1rem;
+}
+
+.profile-content {
+  flex: 1 1 75%;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: var(--brown);
+}
+
+.profile-slogan {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1rem 0;
+  color: var(--brown);
+  font-style: italic;
+}
+
+.profile-bio {
+  font-size: 1.1rem;
+  margin: 0 0 1.5rem 0;
+  color: #444;
+}
+
+.profile-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.profile-links a {
+  color: #2d2d2d;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid var(--silver);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.profile-links a:hover {
+  color: var(--brown);
+  border-bottom: 2px solid var(--brown);
+}
